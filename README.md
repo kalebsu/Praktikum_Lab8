@@ -10,7 +10,7 @@ Buat program sederhana dengan mengaplikasikan penggunaan class. Buatlah classunt
 ◾ Metode ubah(nama)untuk mengubah data berdasarkan nama
 
 FLOWCHART
-![mig]gambarlab8/gbr1.png
+![gambar1](gambarlab8/gbr1.png)
 
 Pertama kita mendeklarasikan sebuah classMahasiswa yang didalamnya terdapat atributNIM, Nama, nilai tugas, nilai UTS dan nilai UAS.
 
@@ -39,7 +39,7 @@ def tambah(self,nim,nama,tugas,uts,uas):
     data.uas.append(uas)
 
 Ini tampilan jika kita memanggil method tambah():
-![img]gambarlab8/gbr2.png
+![gambar](gambarlab8/gbr2.png)
 
 Metode membuat lihat(), berguna untuk menampilkan seluruh data yang sudah kita tambahkan tadi. Jika tidak ada data sama sekali, maka akan muncul tulisan TIDAK ADA DATA . Kita menggunakan for loopuntuk menampilkan banyak data. Nantinya data akan ditampilkan sebanyak n kali.
 
@@ -54,7 +54,7 @@ def lihat(self):
          print(f'{((self.tugas[i]*30/100) + (self.uts[i]*35/100) + (self.uas[i]*35/100)) :.2f}', " |")
 
 Ini tampilan jika kita memanggil method lihat():
-![img]gambarlab8/gbr3.png
+![gambar](gambarlab8/gbr3.png)
 
 Membuat metode ubah()yang berfungsi untuk mengubah data. jika metode ini dipanggil, maka data Nama, NIM, nilai tugas, nilai UTS, nilai UAS index nomor - (no)akan diubah sesuai dengan inputan dari pengguna. Index ke - (no)akan dicari secara otomatis sesuai dengan nama yang ingin diubah oleh pengguna.
 
@@ -66,7 +66,7 @@ def ubah(self,nim,nama,tugas,uts,uas):
      self.uas[no] = uas
 
 Ini tampilan jika kita memanggil method ubah():
-![img]gambarlab8/gbr4.png
+![gambar](gambarlab8/gbr4.png)
 
 Terakhir kita buat metode hapus(). Gunanya adalah melacak data berdasarkan nama. Kita bisa menggunakan deluntuk menghapus datanya. Seperti tadi, daftar nomor indeks yang akan dihapus disesuaikan dengan inputan dari pengguna. Yaitu indeks nomor ke - (no).
 
@@ -78,11 +78,11 @@ def hapus(self):
      del self.uas[no]
 
 Ini tampilan jika kita memanggil method hapus():
-![img]gambarlab8/gbr5.png
+![gambar](gambarlab8/gbr5.png)
 
 Kita sudah mendeklarasikan class, instance class dan juga method. Sekarang semua itu bisa dilihat dengan diagram seperti ini :
 
-![img]gambarlab8/gbr8.png
+![gambar](gambarlab8/gbr8.png)
 
 Dan untuk menjalankan program dan dapat memanggil metode masing-masing, seperti biasa kita menggunakan while loopyang didalamnya ada conditionalseperti ini.
 
